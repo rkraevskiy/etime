@@ -1,0 +1,15 @@
+
+/* config for timestamps since 2020.01.01. 00:00:00 */
+
+/* time related to some good timepoint like 2000.01.01 00:00:00 */
+
+#define ETIME_BASE_YEAR 100 /* 2000 -> 2000-1900=100 */
+#define ETIME_EPOCH_WDAY 6 /* 2000.01.01 00:00:00 was Saturday -> 4 */
+#define ETIME_BASE_LEAP_DELTA 0 /* leap year is 2000 -> 2000-2000=0 */
+#define ETIME_EPOCH_DELTA 946684800 /* UNIX epoch timestamp of 2000.01.01 00:00:00 */
+
+
+typedef unsigned long long etime_t;
+#define etime_t etime_t
+
+
